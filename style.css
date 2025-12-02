@@ -33,13 +33,16 @@ html, body {
 
 /* ===== BUTTON ===== */
 .connect-btn {
-    padding: 18px 40px;
+    padding: 18px 40px 18px 40px;
     border-radius: 16px;
     border: none;
-    background-color: black;  
-    color: white;
-    font-size: 16px;
+    background: #FFFFFF;
+    color: #000000;
+    font-size: 14px;
     cursor: pointer;
+    font-weight: 600;
+    font-style: poppins;
+     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .connect-btn:hover {
@@ -220,9 +223,10 @@ html, body {
 
 /* HEADINGS */
 .title {
-    font-size: 34px;
+    font-size: 48px;
     margin: 14px 0 4px;
-    font-weight: 700;
+    font-weight: 400;
+    font-style: regular;
 }
 
 .subtitle {
@@ -231,39 +235,94 @@ html, body {
     margin-bottom: 40px;
 }
 
-
 /* ================= EXPERTISE CARDS ================= */
 .expertise-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 22px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
     margin-bottom: 60px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .expertise-card {
-    width: 280px;
     background: white;
     color: black;
-    text-align: center;
     border-radius: 18px;
-    padding: 18px;
+    padding: 30px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
 }
 
 .expertise-card img {
-    width: 100%;
-    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    object-fit: cover;
 }
 
 .expertise-card h3 {
-    font-size: 17px;
-    margin: 14px 0 6px;
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 600;
 }
+
+.expertise-card p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
+}
+
+/* First row - 2 cards */
+.expertise-card:nth-child(1),
+.expertise-card:nth-child(2) {
+    grid-row: 1;
+}
+
+.expertise-card:nth-child(1) {
+    grid-column: 1 / 3;
+    border-top-left-radius: 60px;
+}
+
+.expertise-card:nth-child(2) {
+    grid-column: 3 / 4;
+    border-top-right-radius: 60px;
+}
+
+/* Second row - 3 cards */
+.expertise-card:nth-child(3),
+.expertise-card:nth-child(4),
+.expertise-card:nth-child(5) {
+    grid-row: 2;
+}
+
+.expertise-card:nth-child(3) {
+    grid-column: 1 / 2;
+    border-bottom-left-radius: 60px;
+}
+
+.expertise-card:nth-child(4) {
+    grid-column: 2 / 3;
+}
+
+.expertise-card:nth-child(5) {
+    grid-column: 3 / 4;
+    border-bottom-right-radius: 60px;
+}
+
 
 /* ================= INDUSTRY SECTION ================= */
 .title2 {
-    font-size: 30px;
+    font-size: 48px;
     margin-bottom: 8px;
+    font-weight: 500;
+    font-style: roboto flex;
 }
 
 .subtitle2 {
@@ -285,6 +344,11 @@ html, body {
     color: black;
     padding: 22px;
     border-radius: 14px;
+    text-align: left;
+}
+.industry-card img {
+    display: block;
+    margin-bottom: 12px;
 }
 
 .industry-card h4 {
@@ -296,14 +360,17 @@ html, body {
 /* Whole Section Background */
 .connect-wrapper {
     background: #F6F6F6;
-    padding: 50px 38px;
+    padding: 64px 122px 64px 122px;
+    border-radius: 22px;
+    width: 85%;
+    margin: 40px auto;
     display: flex;
     justify-content: center;
+    margin-bottom: 148px;
 }
 
 /* Inner Box */
 .connect-container {
-    background: #fff;
     width: 100%;
     max-width: 850px;
     border-radius: 25px;
@@ -314,6 +381,8 @@ html, body {
 
 .connect-badge {
     background: #EAEAEA;
+    color: #606060;
+
     display: inline-block;
     padding: 5px 18px;
     border-radius: 20px;
@@ -380,17 +449,30 @@ html, body {
 
 .footer-wrapper {
     background: #0048FF;
-    padding: 60px 38px;
+    width: 100%;
+    padding: 47px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     color: white;
     font-family: "Roboto Flex", sans-serif;
 }
 
+.footer-content {
+    width: 100%;
+    max-width: 1176px;
+    height: 131px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 132px;
+}
+
 /* Left Section */
 .footer-left {
     max-width: 350px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-logo {
@@ -407,6 +489,10 @@ html, body {
 /* Right Section */
 .footer-right {
     text-align: right;
+    display: flex;
+    flex-direction: column; 
+    gap: 8px;               
+    align-items: flex-end;
 }
 
 .footer-mail {
@@ -414,9 +500,389 @@ html, body {
     font-size: 15px;
     text-decoration: underline;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .footer-copy {
     font-size: 13px;
     opacity: 0.9;
+    margin-top: 40px;
+}
+
+/* ================= RESPONSIVE MEDIA QUERIES ================= */
+
+/* Tablets and smaller desktops (1024px and below) */
+@media (max-width: 1024px) {
+    .navbar-container {
+        gap: 100px;
+        padding: 20px 30px;
+    }
+
+    .nav-links {
+        gap: 30px;
+        font-size: 16px;
+    }
+
+    .hero {
+        margin-top: 80px;
+        padding-bottom: 120px;
+        padding: 0 30px 120px;
+    }
+
+    .brand-title,
+    .main-heading {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .products-section {
+        padding: 80px 50px;
+    }
+
+    .products-container {
+        gap: 20px;
+    }
+
+    .product-card {
+        width: 340px;
+        height: auto;
+    }
+
+    .main-wrapper {
+        padding: 50px 60px;
+        width: 90%;
+    }
+
+    .expertise-row {
+        padding: 0 30px;
+    }
+
+    .industry-card {
+        width: 200px;
+    }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .connect-btn {
+        padding: 14px 30px;
+        font-size: 14px;
+    }
+
+    .ellipse {
+        width: 400px;
+        height: 400px;
+    }
+
+    .hero {
+        margin-top: 60px;
+        padding: 0 20px 80px;
+    }
+
+    .brand-title,
+    .main-heading {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .sub-text {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .products-section {
+        padding: 60px 30px;
+    }
+
+    .products-heading {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .products-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .main-wrapper {
+        padding: 40px 30px;
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .title2 {
+        font-size: 24px;
+    }
+
+    .expertise-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    .expertise-card {
+        width: 100%;
+        max-width: none;
+        padding: 25px;
+    }
+
+    .expertise-card:nth-child(1),
+    .expertise-card:nth-child(2) {
+        grid-column: 1;
+    }
+
+    .expertise-card:nth-child(3),
+    .expertise-card:nth-child(4),
+    .expertise-card:nth-child(5) {
+        grid-column: 1;
+    }
+
+    .expertise-card:nth-child(1),
+    .expertise-card:nth-child(2),
+    .expertise-card:nth-child(3),
+    .expertise-card:nth-child(4),
+    .expertise-card:nth-child(5) {
+        border-radius: 18px !important;
+    }
+
+    .expertise-card h3 {
+        font-size: 18px;
+    }
+
+    .industry-row {
+        gap: 15px;
+    }
+
+    .industry-card {
+        width: calc(50% - 10px);
+        min-width: 150px;
+    }
+
+    .connect-wrapper {
+        padding: 40px 20px;
+    }
+
+    .connect-container {
+        padding: 40px 30px;
+    }
+
+    .connect-title {
+        font-size: 26px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .half {
+        width: 100%;
+    }
+
+    .submit-btn {
+        width: 100%;
+        float: none;
+        font-size: 18px;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+    .footer-left {
+        max-width: 100%;
+    }
+
+    .footer-right {
+        text-align: center;
+    }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .logo {
+        width: 100px;
+    }
+
+    .nav-links {
+        font-size: 14px;
+        gap: 12px;
+    }
+
+    .connect-btn {
+        padding: 12px 24px;
+        font-size: 13px;
+    }
+
+    .ellipse {
+        width: 300px;
+        height: 300px;
+        filter: blur(80px);
+    }
+
+    .hero {
+        margin-top: 40px;
+        padding: 0 15px 60px;
+    }
+
+    .brand-title,
+    .main-heading {
+        font-size: 26px;
+        line-height: 34px;
+        letter-spacing: -0.3px;
+    }
+
+    .sub-text {
+        font-size: 13px;
+    }
+
+    .connect-cta {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .products-section {
+        padding: 50px 20px;
+    }
+
+    .products-heading {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .product-card {
+        padding: 25px 20px;
+    }
+
+    .product-logo {
+        height: 80px;
+        width: auto;
+    }
+
+    .product-title {
+        font-size: 16px;
+    }
+
+    .product-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .main-wrapper {
+        padding: 30px 20px;
+        width: 95%;
+        border-radius: 16px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .title2 {
+        font-size: 20px;
+    }
+
+    .subtitle,
+    .subtitle2 {
+        font-size: 13px;
+    }
+
+    .expertise-card {
+        width: 100%;
+        padding: 20px;
+        min-height: 180px;
+    }
+
+    .expertise-card h3 {
+        font-size: 16px;
+    }
+
+    .expertise-card p {
+        font-size: 13px;
+    }
+
+    .expertise-card img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+
+    .floating-badge {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .industry-card {
+        width: 100%;
+    }
+
+    .industry-card h4 {
+        font-size: 15px;
+    }
+
+    .connect-wrapper {
+        padding: 30px 15px;
+    }
+
+    .connect-container {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .connect-title {
+        font-size: 22px;
+    }
+
+    .input-field {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 10px 24px;
+    }
+
+    .footer-wrapper {
+        padding: 30px 20px;
+    }
+
+    .footer-logo {
+        height: 45px;
+    }
+
+    .footer-text {
+        font-size: 13px;
+    }
+
+    .footer-mail {
+        font-size: 14px;
+    }
 }
