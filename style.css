@@ -1,17 +1,16 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   overflow-x: hidden;
   font-family: "Roboto Flex", sans-serif;
-
 }
 html {
   scroll-behavior: smooth;
 }
-
 
 /* ===== NAVBAR MAIN WRAPPER ===== */
 .navbar-container {
@@ -24,10 +23,9 @@ html {
 
 /* ===== LOGO ===== */
 .logo {
-  width: 120px; 
+  width: 120px;
   cursor: pointer;
 }
-
 /* ===== NAVIGATION MENU ===== */
 .nav-links {
   display: flex;
@@ -37,26 +35,51 @@ html {
   font-weight: 500;
 }
 
-
 /* ===== BUTTON ===== */
 .button {
   padding: 18px 40px 18px 40px;
   border-radius: 16px;
   border: none;
-  background: #FFFFFF;
+  background: #ffffff;
   color: #000000;
   font-size: 14px;
   cursor: pointer;
   font-weight: 600;
   font-style: poppins;
-   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   color: inherit;
   transition: 0.3s;
 }
 
 .connect-btn:hover {
-  opacity: 0.8;   
+  opacity: 0.8;
+}
+.hamburger {
+  height: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 8px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.active-nav {
+  display: none;
+}
+.mobile-nav {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .ellipse {
@@ -96,7 +119,7 @@ html {
   font-size: 56px;
   line-height: 64px;
   letter-spacing: -0.48px;
-  color: #0057FF;
+  color: #0057ff;
   margin-bottom: 5px;
 }
 
@@ -130,14 +153,12 @@ html {
   transition: 0.3s;
   align-self: center;
   display: flex;
-
 }
 
 .connect-cta:hover {
   background: #053cc3;
   transform: translateY(-2px);
 }
-
 
 /* ================= PRODUCTS SECTION ================= */
 .products-section {
@@ -157,7 +178,7 @@ html {
   margin-bottom: 20px;
 }
 .tag span {
-  color: #005CFF;
+  color: #005cff;
   font-weight: 600;
 }
 
@@ -186,11 +207,11 @@ html {
   border-radius: 18px;
   padding: 30px 25px;
   text-align: left;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
-.product-card-style{
+.product-card-style {
   height: 296px;
-  width: 344px;;
+  width: 344px;
 }
 /* Logos Centered */
 .product-logo {
@@ -215,9 +236,8 @@ html {
   font-style: normal;
 }
 
-
 .main-wrapper {
-  background: #0159FF;
+  background: #0159ff;
   color: white;
   padding: 64px 122px 64px 122px;
   border-radius: 22px;
@@ -253,164 +273,162 @@ html {
 
 /* MAIN BLUE SECTION */
 .expertise-container {
-background-color: #0a44e6;
-border-radius: 22px;
-margin: 64px 38px;
-padding-bottom: 64px;
+  background-color: #0a44e6;
+  border-radius: 22px;
+  margin: 64px 38px;
+  padding-bottom: 64px;
 }
 
 /* HEADER SECTION */
 .expertise-header {
-display: flex;
-justify-content: center;
-align-items: center;
-padding-top: 64px;
-text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 64px;
+  text-align: center;
 }
 
 .expertise-pill {
-height: 34px;
-width: 82px;
-background: #fff;
-color: #606060;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 90px;
-margin: auto;
+  height: 34px;
+  width: 82px;
+  background: #fff;
+  color: #606060;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 90px;
+  margin: auto;
 }
 
 .expertise-title {
-color: #fff;
-font-size: 40px;
-font-weight: 400;
-margin: 10px 0;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 10px 0;
 }
 
 .expertise-subtitle {
-color: #fff;
-margin-bottom: 20px;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 /* ROWS */
 .expertise-row {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .second-row {
-margin-top: 8px;
+  margin-top: 8px;
 }
 
 /* CARD BASE DESIGN */
 .card {
-background-color: #fff;
-position: relative;
-overflow: hidden;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
 }
 
 /* CARD SIZES */
 .card-large-left {
-height: 304px;
-width: 584px;
-border-radius: 48px 12px 12px 12px;
+  height: 304px;
+  width: 584px;
+  border-radius: 48px 12px 12px 12px;
 }
 
 .card-large-right {
-height: 304px;
-width: 584px;
-border-radius: 12px 48px 12px 12px;
+  height: 304px;
+  width: 584px;
+  border-radius: 12px 48px 12px 12px;
 }
 
 .card-small-left {
-height: 352px;
-width: 387px;
-border-radius: 12px 12px 12px 48px;
+  height: 352px;
+  width: 387px;
+  border-radius: 12px 12px 12px 48px;
 }
 
 .card-small-mid {
-height: 352px;
-width: 386px;
-border-radius: 12px;
+  height: 352px;
+  width: 386px;
+  border-radius: 12px;
 }
 
 .card-small-right {
-height: 352px;
-width: 387px;
-border-radius: 12px 12px 48px 12px;
+  height: 352px;
+  width: 387px;
+  border-radius: 12px 12px 48px 12px;
 }
 
 /* IMAGE WRAPPER */
 .card-img-wrapper {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* IMAGES */
 .card-img-1 {
-height: 274px;
-width: 307px;
-object-fit: cover;
+  height: 274px;
+  width: 307px;
+  object-fit: cover;
 }
 
 .card-img-2 {
-height: 170px;
-width: 493px;
-object-fit: contain;
+  height: 170px;
+  width: 493px;
+  object-fit: contain;
 }
 
 .card-img-3 {
-height: 200px;
-width: 100%;
-object-fit: cover;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .card-img-4 {
-height: 336px;
-width: 336px;
-object-fit: cover;
+  height: 336px;
+  width: 336px;
+  object-fit: cover;
 }
 
 .card-img-5 {
-height: 220px;
-width: 100%;
-object-fit: cover;
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* CARD CONTENT */
 .card-content {
-position: absolute;
-bottom: 10px;
-padding: 0 80px;
-z-index: 1;
-text-align: center;
+  position: absolute;
+  bottom: 10px;
+  padding: 0 80px;
+  z-index: 1;
+  text-align: center;
 }
 
 .card-title {
-color: #000;
+  color: #000;
 }
 
 .card-desc {
-color: #6b7280;
+  color: #6b7280;
 }
 
 /* GRADIENT OVERLAY */
 .card-gradient {
-height: 180px;
-width: 100%;
-background: linear-gradient(to bottom, #ffffff00, #f7f7f8);
-position: absolute;
-bottom: 0;
+  height: 180px;
+  width: 100%;
+  background: linear-gradient(to bottom, #ffffff00, #f7f7f8);
+  position: absolute;
+  bottom: 0;
 }
 
 .mid-gradient {
-height: 196px !important;
+  height: 196px !important;
 }
-
-
 
 /* ================= INDUSTRY SECTION ================= */
 .title2 {
@@ -418,15 +436,15 @@ height: 196px !important;
   margin: 28px 28px;
   font-weight: 500;
   font-family: "Roboto Flex", sans-serif;
-  text-align: center;      
-  color: white;  
+  text-align: center;
+  color: white;
 }
 
 .subtitle2 {
- font-size: 14px;
+  font-size: 14px;
   opacity: 0.9;
   margin-bottom: 35px;
-  text-align: center;     
+  text-align: center;
   color: #e3e8ff;
 }
 
@@ -457,15 +475,15 @@ height: 196px !important;
   font-weight: 600;
 }
 .industry-card p {
-  color: #A1A1A1;
+  color: #a1a1a1;
 }
 
 /* Whole Section Background */
 .connect-wrapper {
-  background-color: #F6F6F6;
-border-radius: 22px;
-margin: 64px 38px;
-padding-bottom: 64px;
+  background-color: #f6f6f6;
+  border-radius: 22px;
+  margin: 64px 38px;
+  padding-bottom: 64px;
 }
 
 /* Inner Box */
@@ -479,7 +497,7 @@ padding-bottom: 64px;
 }
 
 .connect-badge {
-  background: #EAEAEA;
+  background: #eaeaea;
   color: #606060;
 
   display: inline-block;
@@ -509,7 +527,7 @@ padding-bottom: 64px;
   padding: 14px;
   margin-bottom: 12px;
   border-radius: 8px;
-  border: 1px solid rgb(210,210,210);
+  border: 1px solid rgb(210, 210, 210);
   font-size: 15px;
   outline: none;
   background: white;
@@ -521,7 +539,9 @@ padding-bottom: 64px;
   gap: 12px;
 }
 
-.half { width: 50%; }
+.half {
+  width: 50%;
+}
 
 /* Message box */
 .textarea {
@@ -531,13 +551,13 @@ padding-bottom: 64px;
 
 /* Submit Button */
 .submit-btn {
-  background: #0057FF;
+  background: #0057ff;
   border: none;
   color: white;
   font-size: 20px;
   padding: 10px 28px;
   border-radius: 50px;
-  
+
   cursor: pointer;
   float: right;
 }
@@ -546,163 +566,172 @@ padding-bottom: 64px;
   background: #0040c9;
 }
 
-.footer-row{
-    background-color: #0a44e6;
-        padding:  64px 132px;
-        color: white;
-        display: flex;
-        justify-content: space-between;
+.footer-row {
+  background-color: #0a44e6;
+  padding: 64px 132px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
 }
-.footer-contact-text{
-    padding-bottom: 80px
+.footer-contact-text {
+  padding-bottom: 80px;
 }
 /* ================= RESPONSIVE MEDIA QUERIES ================= */
 
 /* Tablets and smaller desktops (1024px and below) */
 @media (max-width: 1024px) {
   .navbar-container {
-      gap: 100px;
-      padding: 20px 30px;
+    gap: 100px;
+    padding: 20px 30px;
   }
 
   .nav-links {
-      gap: 30px;
-      font-size: 16px;
+    gap: 30px;
+    font-size: 16px;
   }
 
   .hero {
-      margin-top: 80px;
-      padding-bottom: 120px;
-      padding: 0 30px 120px;
+    margin-top: 80px;
+    padding-bottom: 120px;
+    padding: 0 30px 120px;
   }
 
   .brand-title,
   .main-heading {
-      font-size: 42px;
-      line-height: 50px;
+    font-size: 42px;
+    line-height: 50px;
   }
 
   .products-section {
-      padding: 80px 50px;
+    padding: 80px 50px;
   }
 
   .products-container {
-      gap: 20px;
+    gap: 20px;
   }
 
   .product-card {
-      width: 340px;
-      height: auto;
+    width: 340px;
+    height: auto;
   }
 
   .main-wrapper {
-      padding: 50px 60px;
-      width: 90%;
+    padding: 50px 60px;
+    width: 90%;
   }
 
   .expertise-row {
-      padding: 0 30px;
+    padding: 0 30px;
   }
 
   .industry-card {
-      width: 200px;
+    width: 200px;
   }
 }
 
 /* Tablets (768px and below) */
 @media (max-width: 768px) {
   .navbar-container {
-      flex-direction: column;
-      gap: 20px;
-      padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
   }
 
   .nav-links {
-      flex-direction: column;
-      gap: 15px;
-      text-align: center;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    display: none;
   }
 
   .connect-btn {
-      padding: 14px 30px;
-      font-size: 14px;
+    padding: 14px 30px;
+    font-size: 14px;
   }
 
   .ellipse {
-      width: 400px;
-      height: 400px;
+    width: 400px;
+    height: 400px;
   }
 
   .hero {
-      margin-top: 60px;
-      padding: 0 20px 80px;
+    margin-top: 60px;
+    padding: 0 20px 80px;
+  }
+  .expertise-container {
+    background-color: #0a44e6;
+    border-radius: 22px;
+    margin: 10px;
+    padding-bottom: 64px;
   }
 
   .brand-title,
   .main-heading {
-      font-size: 32px;
-      line-height: 40px;
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .sub-text {
-      font-size: 14px;
-      padding: 0 20px;
+    font-size: 14px;
+    padding: 0 20px;
   }
 
   .products-section {
-      padding: 60px 30px;
+    padding: 60px 30px;
   }
 
   .products-heading {
-      font-size: 28px;
-      line-height: 38px;
+    font-size: 28px;
+    line-height: 38px;
   }
 
   .products-container {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .product-card {
-      width: 100%;
-      max-width: 400px;
+    width: 100%;
+    max-width: 400px;
   }
 
   .main-wrapper {
-      padding: 40px 30px;
-      width: 90%;
-      margin: 30px auto;
+    padding: 40px 30px;
+    width: 90%;
+    margin: 30px auto;
   }
 
   .title {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .title2 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .expertise-row {
-      grid-template-columns: 1fr;
-      gap: 15px;
-      padding: 0 20px;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 20px;
   }
 
   .expertise-card {
-      width: 100%;
-      max-width: none;
-      padding: 25px;
+    width: 100%;
+    max-width: none;
+    padding: 25px;
   }
 
   .expertise-card:nth-child(1),
   .expertise-card:nth-child(2) {
-      grid-column: 1;
+    grid-column: 1;
   }
 
   .expertise-card:nth-child(3),
   .expertise-card:nth-child(4),
   .expertise-card:nth-child(5) {
-      grid-column: 1;
+    grid-column: 1;
   }
 
   .expertise-card:nth-child(1),
@@ -710,191 +739,209 @@ padding-bottom: 64px;
   .expertise-card:nth-child(3),
   .expertise-card:nth-child(4),
   .expertise-card:nth-child(5) {
-      border-radius: 18px !important;
+    border-radius: 18px !important;
   }
 
   .expertise-card h3 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .industry-row {
-      gap: 15px;
+    gap: 15px;
+    margin: 0px 15px;
   }
 
   .industry-card {
-      width: calc(50% - 10px);
-      min-width: 150px;
+    width: calc(50% - 10px);
+    min-width: 150px;
   }
 
   .connect-wrapper {
-      padding: 40px 20px;
+    padding: 40px 20px;
   }
 
   .connect-container {
-      padding: 40px 30px;
+    padding: 40px 30px;
   }
 
   .connect-title {
-      font-size: 26px;
+    font-size: 26px;
   }
 
   .row {
-      flex-direction: column;
-      gap: 0;
+    flex-direction: column;
+    gap: 0;
   }
 
   .half {
-      width: 100%;
+    width: 100%;
   }
 
   .submit-btn {
-      width: 100%;
-      float: none;
-      font-size: 18px;
+    width: 100%;
+    float: none;
+    font-size: 18px;
+  }
+  .hamburger {
+    height: 45px;
+    width: 45px;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .active-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-nav.active-nav {
+    display: flex;
   }
 }
 
 /* Mobile devices (480px and below) */
 @media (max-width: 480px) {
   .logo {
-      width: 100px;
+    width: 100px;
   }
 
   .nav-links {
-      font-size: 14px;
-      gap: 12px;
+    font-size: 14px;
+    gap: 12px;
   }
 
   .connect-btn {
-      padding: 12px 24px;
-      font-size: 13px;
+    padding: 12px 24px;
+    font-size: 13px;
   }
 
   .ellipse {
-      width: 300px;
-      height: 300px;
-      filter: blur(80px);
+    width: 300px;
+    height: 300px;
+    filter: blur(80px);
   }
 
   .hero {
-      margin-top: 40px;
-      padding: 0 15px 60px;
+    margin-top: 40px;
+    padding: 0 15px 60px;
   }
 
   .brand-title,
   .main-heading {
-      font-size: 26px;
-      line-height: 34px;
-      letter-spacing: -0.3px;
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: -0.3px;
   }
 
   .sub-text {
-      font-size: 13px;
+    font-size: 13px;
   }
 
   .connect-cta {
-      padding: 8px 20px;
-      font-size: 14px;
+    padding: 8px 20px;
+    font-size: 14px;
   }
 
   .products-section {
-      padding: 50px 20px;
+    padding: 50px 20px;
   }
 
   .products-heading {
-      font-size: 24px;
-      line-height: 32px;
+    font-size: 24px;
+    line-height: 32px;
   }
 
   .product-card {
-      padding: 25px 20px;
+    padding: 25px 20px;
   }
 
   .product-logo {
-      height: 80px;
-      width: auto;
+    height: 80px;
+    width: auto;
   }
 
   .product-title {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .product-text {
-      font-size: 14px;
-      line-height: 24px;
+    font-size: 14px;
+    line-height: 24px;
   }
 
   .main-wrapper {
-      padding: 30px 20px;
-      width: 95%;
-      border-radius: 16px;
+    padding: 30px 20px;
+    width: 95%;
+    border-radius: 16px;
   }
 
   .title {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .title2 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .subtitle,
   .subtitle2 {
-      font-size: 13px;
+    font-size: 13px;
   }
 
   .expertise-card {
-      width: 100%;
-      padding: 20px;
-      min-height: 180px;
+    width: 100%;
+    padding: 20px;
+    min-height: 180px;
   }
 
   .expertise-card h3 {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .expertise-card p {
-      font-size: 13px;
+    font-size: 13px;
   }
 
   .expertise-card img {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
   }
 
   .industry-card {
-      width: 100%;
-      
+    width: 100%;
   }
 
   .industry-card h4 {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   .connect-wrapper {
-      padding: 30px 15px;
+    padding: 30px 15px;
   }
 
   .connect-container {
-      padding: 30px 20px;
-      border-radius: 20px;
+    padding: 30px 20px;
+    border-radius: 20px;
   }
 
   .connect-title {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   .input-field {
-      padding: 12px;
-      font-size: 14px;
+    padding: 12px;
+    font-size: 14px;
   }
 
   .submit-btn {
-      font-size: 16px;
-      padding: 10px 24px;
+    font-size: 16px;
+    padding: 10px 24px;
   }
-
 }
 @media (max-width: 1024px) {
   .expertise-row {
@@ -950,13 +997,13 @@ padding-bottom: 64px;
   }
 }
 @media (max-width: 768px) {
-    .footer-row {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .footer-contact-text{
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-contact-text {
     padding-bottom: 20px;
     padding-top: 10px;
-}
+  }
 }
