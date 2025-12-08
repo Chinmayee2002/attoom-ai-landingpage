@@ -37,6 +37,7 @@ html {
   font-weight: 500;
 }
 
+
 /* ===== BUTTON ===== */
 .button {
   padding: 18px 40px 18px 40px;
@@ -51,6 +52,7 @@ html {
    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   color: inherit;
+  transition: 0.3s;
 }
 
 .connect-btn:hover {
@@ -431,7 +433,7 @@ height: 196px !important;
 .industry-row {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
@@ -453,6 +455,9 @@ height: 196px !important;
   margin-bottom: 10px;
   font-size: 17px;
   font-weight: 600;
+}
+.industry-card p {
+  color: #A1A1A1;
 }
 
 /* Whole Section Background */
@@ -858,16 +863,9 @@ padding-bottom: 64px;
       margin-bottom: 15px;
   }
 
-  .floating-badge {
-      width: 40px;
-      height: 40px;
-      font-size: 20px;
-      bottom: 15px;
-      right: 15px;
-  }
-
   .industry-card {
       width: 100%;
+      
   }
 
   .industry-card h4 {
