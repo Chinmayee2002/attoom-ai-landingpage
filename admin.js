@@ -9,18 +9,16 @@ const firebaseConfig = {
   appId: "1:88981979980:web:0e802021b276b4f25005e9",
 };
 
-firebase.initializeApp(firebaseConfig); // Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
-//reference your database
-
+// Reference the database
 var contactFormDB = firebase.database().ref("contactForm");
 
-// ===== LOGIN  =====
+// ===== LOGIN =====
 function adminLogin() {
   let user = document.getElementById("adminUser").value;
   let pass = document.getElementById("adminPass").value;
 
-  // --- hardcoded login and password ---
   const ADMIN_USER = "admin";
   const ADMIN_PASS = "admin123";
 
@@ -42,17 +40,18 @@ function loadData() {
     snapshot.forEach((child) => {
       let data = child.val();
 
-      let row = `
-        <tr onmouseover="this.style.backgroundColor='#f4f7ff';" onmouseout="this.style.backgroundColor='white';">
-          <td style="padding: 12px 15px; border: 1px solid black;">${data.topic}</td>
-          <td style="padding: 12px 15px; border: 1px solid black;">${data.name}</td>
-          <td style="padding: 12px 15px; border: 1px solid black;">${data.email}</td>
-          <td style="padding: 12px 15px; border: 1px solid black;">${data.phone}</td>
-          <td style="padding: 12px 15px; border: 1px solid black;">${data.msgContent}</td>
-        </tr>
+      let row = document.createElement("tr");
+      row.classList.add("table-row");
+
+      row.innerHTML = `
+        <td class="table-cell">${data.topic}</td>
+        <td class="table-cell">${data.name}</td>
+        <td class="table-cell">${data.email}</td>
+        <td class="table-cell">${data.phone}</td>
+        <td class="table-cell">${data.msgContent}</td>
       `;
 
-      tableBody.innerHTML += row;
+      tableBody.appendChild(row);
     });
   });
 }
