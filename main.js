@@ -26,14 +26,19 @@ document.getElementById("contactForm").addEventListener("submit", submitForm);
 function submitForm(e) {
   e.preventDefault();
 
-  var topic = getElementVal("topic");
-  var name = getElementVal("name");
-  var email = getElementVal("emailid");
-  var phone = getElementVal("phone");
-  var msgContent = getElementVal("msgContent");
+  var topic = getElementVal("topic").trim();
+  var name = getElementVal("name").trim();
+  var email = getElementVal("emailid").trim();
+  var phone = getElementVal("phone").trim();
+  var msgContent = getElementVal("msgContent").trim();
 
   saveMessages(topic, name, email, phone, msgContent);
   console.log(topic, name, email, phone, msgContent);
+  // ===== VALIDATION =====
+  if (topic === "" || name === "" || email === "" || msgContent === "") {
+    alert("Please fill all required fields.");
+    return; // stop execution
+  }
   //   enable alert
   document.querySelector(".alert").style.display = "flex";
   //   remove the alert
