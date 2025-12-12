@@ -32,13 +32,13 @@ function submitForm(e) {
   var phone = getElementVal("phone").trim();
   var msgContent = getElementVal("msgContent").trim();
 
-  saveMessages(topic, name, email, phone, msgContent);
-  console.log(topic, name, email, phone, msgContent);
   // ===== VALIDATION =====
   if (topic === "" || name === "" || email === "" || msgContent === "") {
     alert("Please fill all required fields.");
     return; // stop execution
   }
+  saveMessages(topic, name, email, phone, msgContent);
+  console.log(topic, name, email, phone, msgContent);
   //   enable alert
   document.querySelector(".alert").style.display = "flex";
   //   remove the alert
