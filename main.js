@@ -49,6 +49,11 @@ function submitForm(e) {
   document.getElementById("contactForm").reset();
 }
 const saveMessages = (topic, name, email, phone, msgContent) => {
+  const now = new Date();
+
+  const date = now.toLocaleDateString("en-IN"); // 20/12/2025
+  const time = now.toLocaleTimeString("en-IN"); // 11:35:20 AM
+
   var newContactForm = contactFormDB.push();
   newContactForm.set({
     topic: topic,
@@ -56,6 +61,8 @@ const saveMessages = (topic, name, email, phone, msgContent) => {
     email: email,
     phone: phone,
     msgContent: msgContent,
+    date: date,
+    time: time,
   });
   // console.log("Saving to Firebase...");
 };

@@ -44,6 +44,8 @@ function loadData() {
       row.classList.add("table-row");
 
       row.innerHTML = `
+        <td class="table-cell">${data.date || "-"}</td>
+        <td class="table-cell">${data.time || "-"}</td>
         <td class="table-cell">${data.topic}</td>
         <td class="table-cell">${data.name}</td>
         <td class="table-cell">${data.email}</td>
